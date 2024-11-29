@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F3F4F6;
+    align-items: center;
+    padding: 30px;
+}
+
+.blog-img {
+    width: 100%; /* Torna a imagem responsiva */
+    max-width: 800px; /* Define limite de largura */
+    height: auto; /* Mantém a proporção */
+    border-radius: 20px;
+    object-fit: cover; /* Garante que a imagem se encaixe */
+}
+
+.blog-container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+    background-color: white;
+    border-radius: 30px;
+    width: 90%; /* Ajusta largura */
+    max-width: 800px; /* Limite máximo */
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Suave sombra */
+}
+
+.blog-container-main p {
+    padding: 0px 10%; /* Reduz padding para telas menores */
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.6; /* Melhor legibilidade */
+    text-align: justify; /* Melhor aparência */
+}
+
+.blog-container-main h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.blog-container-main-link {
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    color: black;
+    font-size: 18px;
+    margin-top: 30px;
+    transition: 0.3s ease; /* Animação mais suave */
+}
+
+.blog-container-main-link:hover {
+    font-size: 20px; /* Ajuste mais sutil */
+    color: #88C273; /* Cor diferenciada no hover */
+}
+
+.btn-load {
+    width: 100%;
+    max-width: 400px; /* Limita largura máxima */
+    border: 2px solid white;
+    border-radius: 30px;
+    height: 40px;
+    cursor: pointer;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 23px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 40px; /* Centraliza texto verticalmente */
+    transition: 0.3s ease;
+}
+
+.btn-load:hover {
+    background-color: #88C273; /* Destaque ao passar o mouse */
+    color: black;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .blog-container {
+        padding: 20px; /* Reduz padding em telas menores */
+    }
+
+    .blog-container-main {
+        padding: 20px; /* Ajusta o espaçamento interno */
+    }
+
+    .blog-container-main p {
+        padding: 0px 5%; /* Reduz padding lateral */
+    }
+
+    .btn-load {
+        font-size: 18px; /* Fonte menor para telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-container-main h2 {
+        font-size: 24px; /* Ajusta tamanho do título */
+    }
+
+    .btn-load {
+        font-size: 16px; /* Fonte menor para telas bem pequenas */
+    }
+}

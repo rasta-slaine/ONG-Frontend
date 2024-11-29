@@ -1,0 +1,43 @@
+.eventos-page-title {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 3%;
+    font-family: "Bebas Neue", sans-serif; /* Fonte atraente para títulos */
+    color: #333; /* Cor neutra para maior contraste */
+    background-color: #F3F4F6; /* Cor de fundo leve */
+}
+
+.eventos-page-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Torna responsivo */
+    gap: 20px; /* Espaçamento entre os cards */
+    justify-items: center;
+    padding: 4%;
+    text-decoration: none;
+    background-color: #F3F4F6; /* Cor de fundo leve */
+    border-radius: 10px; /* Suaviza bordas */
+}
+
+.custom-link {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit;        /* Herda a cor do texto pai */
+    transition: color 0.3s ease, transform 0.3s ease; /* Suave transição */
+}
+
+.custom-link:hover {
+    color: #88C273; /* Destaque no hover */
+    transform: scale(1.05); /* Leve zoom no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .eventos-page-title {
+        font-size: 32px; /* Título menor em telas menores */
+        padding-top: 5%; /* Ajusta espaçamento */
+    }
+
+    .eventos-page-container {
+        grid-template-columns: 1fr; /* Apenas uma coluna */
+        padding: 2%; /* Reduz padding em telas menores */
+    }
+}

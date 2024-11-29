@@ -1,0 +1,113 @@
+.Contact-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0px;
+    flex-wrap: wrap; /* Garante que os elementos quebrem linha em telas menores */
+}
+
+.Contact-section-part-1 {
+    flex: 1; /* Ocupa espaço disponível */
+    min-width: 300px; /* Evita encolher demais */
+    text-align: center; /* Centraliza conteúdo */
+    padding: 1rem;
+}
+
+.Contact-section-part-2 {
+    flex: 1; /* Ocupa espaço disponível */
+    min-width: 300px; /* Ajusta largura mínima */
+    max-width: 700px;
+    justify-content: center;
+    padding: 3%;
+    border-radius: 8px;
+    box-shadow: rgba(136, 194, 115, 0.4) 5px 5px, rgba(136, 194, 115, 0.3) 10px 10px, rgba(136, 194, 115, 0.2) 15px 15px, rgba(136, 194, 115, 0.1) 20px 20px, rgba(136, 194, 115, 0.05) 25px 25px;
+}
+
+.Contact-section-part-2 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Contact-section-part-2 input,
+.Contact-section-part-2 textarea {
+    width: 100%; /* Ocupa largura total do container */
+    max-width: 400px; /* Define largura máxima */
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.Contact-section-part-2 input:focus,
+.Contact-section-part-2 textarea:focus {
+    border: 3px solid #88C273;
+}
+
+.Contact-section-part-2 textarea {
+    height: 80px; /* Ajusta altura do textarea */
+}
+
+.btn-send {
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    transition: 0.3s ease; /* Animação mais fluida */
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px; /* Altura ajustada */
+    cursor: pointer;
+    background-color: black;
+    text-align: center;
+    line-height: 40px; /* Centraliza texto verticalmente */
+}
+
+.btn-send:hover {
+    background-color: #88C273; /* Efeito ao passar o mouse */
+    color: black;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .Contact-section {
+        flex-direction: column; /* Elementos em coluna para telas menores */
+        align-items: center;
+    }
+
+    .Contact-section-part-2 {
+        width: 90%; /* Ajusta largura em telas menores */
+        padding: 2rem;
+    }
+
+    .Contact-section-part-2 input,
+    .Contact-section-part-2 textarea {
+        max-width: 100%; /* Remove limite em telas menores */
+    }
+
+    .btn-send {
+        width: 100%; /* Botão ocupa largura total */
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Contact-section {
+        padding: 1rem; /* Reduz o espaçamento geral */
+    }
+
+    .Contact-section-part-1,
+    .Contact-section-part-2 {
+        padding: 1rem; /* Ajusta o espaçamento interno */
+    }
+
+    .btn-send {
+        font-size: 14px;
+        height: 50px; /* Maior para facilitar toque */
+        line-height: 50px;
+    }
+}

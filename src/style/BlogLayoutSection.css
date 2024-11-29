@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bloglayout-container-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; /* Garante quebra de linha em telas menores */
+}
+
+.bloglayout-container-box img {
+    height: 430px;
+    width: 100%; /* Ajusta a largura para se adaptar ao container */
+    object-fit: cover; /* Mantém proporção ao redimensionar */
+}
+
+.Blog-title {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+    background-color: #F3F4F6;
+    font-family: "Bebas Neue", sans-serif;
+    border-top-left-radius: 50% 90px;
+    border-top-right-radius: 50% 90px;
+}
+
+.bloglayout-container {
+    display: grid;
+    justify-content: center;
+    padding: 0% 8% 10% 8%;
+    grid-template-columns: 1fr 1fr; /* Inicialmente duas colunas */
+    grid-template-rows: auto;
+    grid-gap: 20px; /* Espaçamento entre os itens */
+    background-color: #F3F4F6;
+    border-bottom-left-radius: 50% 90px;
+    border-bottom-right-radius: 50% 90px;
+}
+
+/* Estilização genérica para os itens */
+.grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4, .grid-item-5 {
+    border-radius: 30px;
+    background: white;
+    padding: 30px;
+}
+
+.grid-item-1 img, .grid-item-2 img, .grid-item-3 img, .grid-item-4 img, .grid-item-5 img {
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-item-1 h2, .grid-item-2 h2, .grid-item-3 h2, .grid-item-4 h2, .grid-item-5 h2 {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 4%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.grid-item-1 p, .grid-item-2 p, .grid-item-3 p, .grid-item-4 p, .grid-item-5 p {
+    padding: 5px 10px;
+}
+
+.btn-load-more {
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    transition: 1s;
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    background-color: black;
+    display: block;
+    text-align: center;
+    line-height: 30px; /* Centraliza o texto verticalmente */
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .bloglayout-container {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+        padding: 0% 5% 10% 5%;
+    }
+
+    .Blog-title {
+        font-size: 40px; /* Reduz tamanho da fonte */
+        padding: 30px 0px;
+    }
+
+    .bloglayout-container-box img {
+        height: auto;
+        max-width: 100%; /* Ajusta largura em telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .bloglayout-container {
+        padding: 0% 3% 10% 3%; /* Reduz margem lateral */
+    }
+
+    .Blog-title {
+        font-size: 32px;
+        padding: 20px 0px;
+    }
+
+    .grid-item-1 img, .grid-item-2 img, .grid-item-3 img, .grid-item-4 img, .grid-item-5 img {
+        height: auto;
+        width: 100%; /* Garante que imagens ocupem o container */
+    }
+
+    .btn-load-more {
+        width: 100%; /* Botão ocupa largura total */
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Blog-title {
+        font-size: 28px; /* Reduz ainda mais para telas muito pequenas */
+    }
+
+    .btn-load-more {
+        font-size: 14px; /* Ajusta tamanho do botão */
+        height: 40px; /* Aumenta altura para tocar facilmente */
+        line-height: 40px;
+    }
+}

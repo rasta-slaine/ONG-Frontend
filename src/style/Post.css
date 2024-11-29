@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Aplicação geral da fonte */
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Container principal */
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; /* Limite máximo para layouts maiores */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px;
+}
+
+/* Imagem do post */
+.post-img {
+    width: 100%;
+    max-width: 768px; /* Garante que não ultrapasse esse limite */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 20px;
+    margin: 5% 0 3%; /* Espaçamento superior e inferior */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona um leve destaque */
+}
+
+/* Título do post */
+.post-title {
+    color: #454545;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: -0.77px;
+    line-height: 1.2;
+    text-align: center;
+    border-bottom: #88C273 solid 3px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Texto do post */
+.post-text {
+    padding: 2% 5%; /* Espaçamento interno: 2% vertical e 5% horizontal */
+    text-align: justify; /* Alinha o texto para melhorar a leitura */
+    line-height: 1.625;
+    font-size: 1rem;
+    color: #333;
+}
+
+.post-text p {
+    margin-bottom: 1rem; /* Margem inferior consistente */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .post-img {
+        max-width: 100%; /* Ajusta para o tamanho do container */
+        height: auto;
+    }
+
+    .post-title {
+        font-size: 2rem; /* Diminui um pouco o tamanho do título */
+    }
+
+    .post-text {
+        padding: 2% 10%; /* Ajusta o espaçamento interno */
+        font-size: 0.9rem; /* Reduz a fonte para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .post-title {
+        font-size: 1.5rem; /* Reduz o tamanho para dispositivos pequenos */
+    }
+
+    .post-text {
+        padding: 2% 5%; /* Espaçamento interno mais reduzido */
+        font-size: 0.875rem; /* Reduz ainda mais o tamanho da fonte */
+    }
+}

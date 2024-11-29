@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.evento-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, 
+                rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, 
+                rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, 
+                rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, 
+                rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, 
+                rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, 
+                rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.evento-card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(14, 63, 126, 0.1) 0px 4px 8px, rgba(42, 51, 70, 0.08) 0px 8px 16px;
+}
+
+.evento-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.evento-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 4px solid #88C273;
+    background-color: #fff;
+    width: 100%;
+}
+
+.evento-card-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.evento-data {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.evento-data .mes {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+    color: #88C273;
+}
+
+.evento-data .dia {
+    font-size: 2.2rem;
+    color: #0c0f0a;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.evento-descrisao {
+    padding: 15px 20px;
+    text-align: left;
+    background-color: #fff;
+}
+
+.evento-descrisao .row {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.evento-descrisao .row p {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: #555;
+}
+
+.evento-descrisao .row span {
+    color: #88C273;
+    font-weight: 600;
+    padding-left: 5px;
+    font-family: "Inter", sans-serif;
+}
+
+.evento-footer {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+.evento-footer p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .evento-card {
+        max-width: 100%;
+        padding: 30px;
+    }
+
+    .evento-card-title {
+        font-size: 1.5rem;
+    }
+
+    .evento-data .mes, .evento-data .dia {
+        font-size: 1.8rem;
+    }
+
+    .evento-descrisao .row p {
+        font-size: 0.9rem;
+    }
+}
