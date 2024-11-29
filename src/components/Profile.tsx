@@ -1,12 +1,12 @@
 
-import React, { useState, useEffect} from 'react';
+import { useState, useEffect} from 'react';
 import axios from 'axios';
 
 
 function Profile() {
   const[loading, SetLoading] = useState<string | null>(null);
-  const[ApiData, SetApiData] = useState<any | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const[ApiData, SetApiData] = useState<string | null>(null);
+  const[error, setError] = useState<string | null>(null);
 
   const[nome, SetNome] = useState<string | null>(null);
 
@@ -48,6 +48,7 @@ useEffect(()=>{
        {error && <p style={{ color: 'red' }}>{error}</p>}
        {loading && <p style={{ color: 'green' }}>{loading}</p>}
       <p>Hello { nome  || 'usuario'}  </p>
+      <p>{ApiData}</p>
     </div>
   )
 }

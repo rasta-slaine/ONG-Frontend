@@ -2,9 +2,7 @@
 import  "../style/ContactSection.css"
 
 
-type Props = {}
-
-const ContactSection = (props: Props) => {
+const ContactSection = () => {
   return (
     <div className='Contact-section'>
         <div className='Contact-section-part-1'>

@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-type Props = {}
 
-const AboutPage = (props: Props) => {
+
+const AboutPage = () => {
 
   
   const CreatorImage = '/avatar.png';

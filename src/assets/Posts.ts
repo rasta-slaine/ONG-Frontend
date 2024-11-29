@@ -1,4 +1,11 @@
-const Post = [
+export interface Post {
+  id: number;
+  img: string;
+  title: string;
+  texto: string;
+}
+
+const posts: Post[] = [
   {
     id: 1,
     img: "/post-1.webp",
@@ -25,4 +32,4 @@ const Post = [
   }
 ];
 
-export default Post;
+export default posts;

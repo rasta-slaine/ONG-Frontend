@@ -1,10 +1,9 @@
-import React from 'react'
+
 import  "../style/HeroSection.css"
 
 
-type Props = {}
 
-const HeroSection = (props: Props) => {
+const HeroSection = () => {
   return (
     <div className='Hero-section'>
           <h2>Biomedicina Ação Social </h2>

@@ -1,19 +1,18 @@
 import Card from './Card.js'
-import evt from '../assets/eventos.js'
+import evt,{Event} from '../assets/eventos.ts'
 
 import  "../style/EventoSection.css"
 import { Link } from "react-router-dom"
 
- type Props = {}
  
- const Eventos = (props: Props) => {
+ const Eventos = () => {
    return (
      <div className='evento-section-container'>
         <h1>Confira Os Nossos Eventos</h1>
 
         <div className='evento-section'>
                 {
-                    evt.map((i)=>(
+                    evt.map((i:Event)=>(
 
                       <Link  to={`/eventos/${i.id}`} 
                           className="custom-link" 

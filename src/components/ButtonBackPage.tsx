@@ -2,9 +2,9 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons';
 
-type Props = {}
 
-const ButtonBackPage = (props: Props) => {
+
+const ButtonBackPage = () => {
 
   const navigate = useNavigate();
 

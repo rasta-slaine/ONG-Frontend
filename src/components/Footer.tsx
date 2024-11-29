@@ -4,9 +4,7 @@ import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free
 import { Link } from "react-router-dom";
 
 
-type Props = {}
-
-const Footer = (props: Props) => {
+const Footer = () => {
     const logoImage = '/logo_ong_blackandwhite.webp';
 
   return (

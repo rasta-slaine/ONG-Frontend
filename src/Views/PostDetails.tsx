@@ -1,17 +1,15 @@
 import  "../style/Post.css"
-import { useParams,useLocation } from 'react-router-dom';
+import {useLocation } from 'react-router-dom';
 import ButtonBackPage from "@/components/ButtonBackPage";
-
+import { PostType } from "@/Types/Posts";
 
 
 const PostDetails = () => {
 
-    //const { postId } = useParams(); 
-    //const post = Post.find(p => p.id === parseInt(postId)); 
 
     const location = useLocation()
     const data =  location.state || {}
-    const post = data.post
+    const post:PostType = data.post
 
     if (!post) { 
       return <h2>Post não encontrado</h2>; // Mensagem se o post não existir

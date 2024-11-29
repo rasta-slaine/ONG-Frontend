@@ -1,8 +1,8 @@
 import  "../style/ContactPage.css"
 
-type Props = {}
 
-const ContactPage = (props: Props) => {
+
+const ContactPage = () => {
   return (
     <div className="contact-page-container">
 

@@ -1,4 +1,20 @@
-const evt = [
+
+export type Event = {
+    id: number;
+    img:string,
+    mes:string,
+    dia:string,
+    inicio:string,
+    enceramento:string,
+    local:string,
+    endereco:string,
+    nome:string,
+    descricao:string
+  };
+
+
+
+const evt: Event[] = [
     {
         id:1,
         img:'/images/post-1.webp',

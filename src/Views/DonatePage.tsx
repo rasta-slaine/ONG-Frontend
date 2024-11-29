@@ -3,9 +3,8 @@ import  "../style/DonatePage.css"
 
 
 
-type Props = {}
 
-const DonatePage = (props: Props) => {
+const DonatePage = () => {
 
     const pix1 = 'BiomedicinaAcaosocial@gmail.com'
 

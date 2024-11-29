@@ -5,51 +5,16 @@
 
 
     import {
-      EmailShareButton,
       FacebookShareButton,
-      GabShareButton,
-      HatenaShareButton,
-      InstapaperShareButton,
-      LineShareButton,
       LinkedinShareButton,
-      LivejournalShareButton,
-      MailruShareButton,
-      OKShareButton,
-      PinterestShareButton,
-      PocketShareButton,
-      RedditShareButton,
-      TelegramShareButton,
-      TumblrShareButton,
       TwitterShareButton,
-      ViberShareButton,
-      VKShareButton,
       WhatsappShareButton,
-      WorkplaceShareButton,
     } from "react-share";
 
     import {
-      EmailIcon,
       FacebookIcon,
-      FacebookMessengerIcon,
-      GabIcon,
-      HatenaIcon, 
-      InstapaperIcon,
-      LineIcon,
       LinkedinIcon,
-      LivejournalIcon,
-      MailruIcon,
-      OKIcon,
-      PinterestIcon,
-      PocketIcon,
-      RedditIcon,
-      TelegramIcon,
-      TumblrIcon,
-      TwitterIcon,
-      ViberIcon,
-      VKIcon,
-      WeiboIcon,
       WhatsappIcon,
-      WorkplaceIcon,
       XIcon,
     } from "react-share";
 
@@ -109,7 +74,7 @@
                                           width="600"
                                           height="450"
                                           style={{ border: 1 }}
-                                          allowFullScreen=""
+              
                                           loading="lazy"
                                           referrerPolicy="no-referrer-when-downgrade"
                                           className="eventos-Details-map"

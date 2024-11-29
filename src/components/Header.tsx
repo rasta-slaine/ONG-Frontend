@@ -1,20 +1,21 @@
 import { Link } from "react-router-dom";
 import "../style/Header.css";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 
-type Props = {};
 
-const Header = (props: Props) => {
-  const navigate = useNavigate();
+
+const Header = () => {
+  //const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const logoImage = "/logo_ong.webp";
 
+  /*
   const HandleLogOut = () => {
     localStorage.removeItem("token");
     navigate("/");
-  };
+  }; */
 
   const toggleMenu = () => {
     setMenuOpen(prevState => !prevState); // Alterna o estado de menuOpen
